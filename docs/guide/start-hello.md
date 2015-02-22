@@ -79,8 +79,9 @@ For the "Hello" task, you will create a `say` view that prints the `message` par
 ```php
 <?php
 use yii\helpers\Html;
+
+echo Html::encode($message);
 ?>
-<?= Html::encode($message) ?>
 ```
 
 The `say` view should be saved in the file `views/site/say.php`. When the method [[yii\web\Controller::render()|render()]]
